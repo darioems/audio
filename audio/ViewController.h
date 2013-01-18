@@ -8,6 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+#import <AudioToolbox/AudioToolbox.h>
+
+#import <AVFoundation/AVFoundation.h>
+
+int clicked;
+
+@interface ViewController : UIViewController {
+    AVAudioPlayer *audioPlayer;
+    IBOutlet UIButton *start;
+    
+}
+- (IBAction)play;
+- (void)theActionMethod;
+
+
 
 @end
